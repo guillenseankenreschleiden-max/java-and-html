@@ -1,22 +1,78 @@
-/* Disabled button appearance */ button: disabled f
-background-color: #aaa; 
-cursor: not-allowed;
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-/* Score text styling */ #score f
-font-size: 18px; 
-font-weight: bold;
+/* Page background */
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* Leaderboard list style */ #leaderboard
-{
-list-style:
-none;
-padding: 0; text-align: left;
-  
-/* Individual leaderboard entries */
-#leaderboard li {
-padding: 5px;
-font-weight: bold;
-  
-/* Dark mode toggle button style */
-• dark-toggle {
-background: #333;
+/* Main container */
+.todo-container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Progress text */
+#progress {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Quote list */
+.quote-list {
+  list-style: none;
+}
+
+/* Each quote item */
+.quote-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Label styling */
+.quote-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Checkbox spacing */
+.quote-list input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Quote text */
+.quote-text {
+  color: #444;
+  font-size: 14px;
+}
+
+/* Checked quotes */
+input:checked + .quote-text {
+  text-decoration: line-through;
+  color: #888;
+}
