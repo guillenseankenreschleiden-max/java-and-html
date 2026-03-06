@@ -1,0 +1,22 @@
+/* Disabled button appearance */ button: disabled f
+background-color: #aaa; 
+cursor: not-allowed;
+
+/* Score text styling */ #score f
+font-size: 18px; 
+font-weight: bold;
+
+/* Leaderboard list style */ #leaderboard
+{
+list-style:
+none;
+padding: 0; text-align: left;
+  
+/* Individual leaderboard entries */
+#leaderboard li {
+padding: 5px;
+font-weight: bold;
+  
+/* Dark mode toggle button style */
+• dark-toggle {
+background: #333;
